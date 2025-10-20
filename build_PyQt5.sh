@@ -82,7 +82,7 @@ echo "=========================================="
 echo "Step 5: Compile and install PyQt5"
 echo "=========================================="
 cd PyQt5-5.15.2
-python configure.py --qmake "$QMAKE_PATH"
+echo "yes" | python configure.py --qmake "$QMAKE_PATH"
 make -j4
 sudo make install
 cd ..
